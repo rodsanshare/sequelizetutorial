@@ -1,0 +1,25 @@
+{
+  "name": "sequelizetutorial",
+  "version": "1.0.0",
+  "description": "aws sequelize example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodsanshare/sequelizetutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodsanshare/sequelizetutorial/issues"
+  },
+  "homepage": "https://github.com/rodsanshare/sequelizetutorial#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.10"
+  }
+}
