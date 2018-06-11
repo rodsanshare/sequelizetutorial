@@ -1,0 +1,2 @@
+# sequelizetutorial
+aws sequelize example
