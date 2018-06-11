@@ -27,25 +27,35 @@ sequelize
     });
 
 
-    const User = sequelize.define('user', {
-        firstName: {
-          type: Sequelize.STRING
-        },
-        lastName: {
-          type: Sequelize.STRING
-        }
-      });
-      
-      // force: true will drop the table if it already exists
-    //   User.sync({force: true}).then(() => {
-    //     // Table created
-    //     return User.create({
-    //       firstName: 'John',
-    //       lastName: 'Hancock'
-    //     });
-    //   });
+const User = sequelize.define('user', {
+    firstName: {
+        type: Sequelize.STRING
+    },
+    lastName: {
+        type: Sequelize.STRING
+    }
+});
+
+// force: true will drop the table if it already exists
+//   User.sync({force: true}).then(() => {
+//     // Table created
+//     return User.create({
+//       firstName: 'John',
+//       lastName: 'Hancock'
+//     });
+//   });
 
 
-      User.findAll().then(users => {
-        console.log(users)
-      })
+User.findAll().then(users => {
+    console.log(users)
+})
+
+User.findOne().then(user => {
+    console.log(user.get('firstName'));
+  });
+
+
+// user = await User.findOne()
+
+// console.log(user.get('firstName'));
+//sequelize.connectionManager.close().then(() => console.log('shut down gracefully'))
